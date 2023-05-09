@@ -1,0 +1,2 @@
+let e={};const t=document.querySelector("form");t.addEventListener("submit",(function(o){t.querySelectorAll("input").forEach((t=>{e[t.name]=parseFloat(t.value)})),o.preventDefault(),function(){let t=e.delay;for(let o=1;o<=e.amount;o++)setTimeout((()=>{var t,l;(t=o,l=e.delay,Math.random()>.3?Promise.resolve(`✅ Fulfilled promise ${t} in ${l}ms`):Promise.reject(`❌ Rejected promise ${t} in ${l}ms`)).then((e=>console.log(e))).catch((e=>console.log(e))),e.delay+=e.step}),t),t+=e.step}()}));
+//# sourceMappingURL=03-promises.77ee0549.js.map
